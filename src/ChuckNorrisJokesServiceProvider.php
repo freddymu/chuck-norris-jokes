@@ -2,6 +2,7 @@
 
 namespace Freddymu\ChuckNorrisJokes;
 
+use Freddymu\ChuckNorrisJokes\Console\ChuckNorrisJoke;
 use Illuminate\Support\ServiceProvider;
 use Freddymu\ChuckNorrisJokes\JokeFactory;
 
@@ -9,7 +10,11 @@ class ChuckNorrisJokesServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                ChuckNorrisJoke::class
+            ]);
+        }
     }
 
     public function register()
