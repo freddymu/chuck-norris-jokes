@@ -2,11 +2,11 @@
 
 namespace Freddymu\ChuckNorrisJokes\Tests;
 
+use Freddymu\ChuckNorrisJokes\JokeFactory;
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use Freddymu\ChuckNorrisJokes\JokeFactory;
 use PHPUnit\Framework\TestCase;
 
 class JokeFactoryTest extends TestCase
@@ -17,7 +17,7 @@ class JokeFactoryTest extends TestCase
         // Create a mock and queue two responses.
         $mock = new MockHandler([
             new Response(200, [], '
-            { "type": "success", "value": { "id": 588, "joke": "Chuck Norris knows Victoria\'s secret.", "categories": [] } }')
+            { "type": "success", "value": { "id": 588, "joke": "Chuck Norris knows Victoria\'s secret.", "categories": [] } }'),
         ]);
 
         $handlerStack = HandlerStack::create($mock);
