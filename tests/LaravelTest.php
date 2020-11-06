@@ -27,7 +27,7 @@ class LaravelTest extends TestCase
 
     protected function getEnvironmentSetUp($app)
     {
-        include_once __DIR__ . '/../database/migrations/create_jokes_table.php.stub';
+        include_once __DIR__.'/../database/migrations/create_jokes_table.php.stub';
         (new \CreateJokesTable)->up();
     }
 
@@ -42,7 +42,7 @@ class LaravelTest extends TestCase
 
         $output = Artisan::output();
 
-        $this->assertSame('some joke' . PHP_EOL, $output);
+        $this->assertSame('some joke'.PHP_EOL, $output);
     }
 
     /** @test */
