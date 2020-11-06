@@ -8,7 +8,8 @@
         "email": "fredhopelane@gmail.com"
     }],
     "require": {
-        "guzzlehttp/guzzle": "^7.2"
+        "guzzlehttp/guzzle": "^7.2",
+        "orchestra/testbench": "^6.3"
     },
     "autoload": {
         "psr-4": {
@@ -21,8 +22,7 @@
         }
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.4",
-        "orchestra/testbench": "~3.0"
+        "phpunit/phpunit": "^9.4"
     },
     "extra": {
         "laravel": {
