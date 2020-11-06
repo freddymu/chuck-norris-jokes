@@ -1,6 +1,8 @@
 # Chuck Norris Jokes
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/freddymu/chuck-norris-jokes.svg?style=flat-square)](https://packagist.org/packages/freddymu/chuck-norris-jokes)
 [![Build Status](https://travis-ci.org/freddymu/chuck-norris-jokes.svg?branch=main)](https://travis-ci.org/freddymu/chuck-norris-jokes)
+[![Total Downloads](https://img.shields.io/packagist/dt/freddymu/chuck-norris-jokes.svg?style=flat-square)](https://packagist.org/packages/freddymu/chuck-norris-jokes)
 
 Create chuck norris jokes in your next PHP project.
 
