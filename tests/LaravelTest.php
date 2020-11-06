@@ -35,7 +35,7 @@ class LaravelTest extends TestCase
 
         $output = Artisan::output();
 
-        $this->assertSame('some joke'.PHP_EOL, $output);
+        $this->assertSame('some joke' . PHP_EOL, $output);
     }
 
     /** @test */
@@ -44,6 +44,8 @@ class LaravelTest extends TestCase
         ChuckNorris::shouldReceive('getRandomJoke')->once()->andReturn('some joke');
 
         $this->get('/chuck-norris')
+            ->assertViewIs('chuck-norris::joke')
+            ->assertViewHas('joke', 'some joke')
             ->assertStatus(200);
     }
 }
