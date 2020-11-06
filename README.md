@@ -1,5 +1,7 @@
 # Chuck Norris Jokes
 
+[![Build Status](https://travis-ci.org/freddymu/chuck-norris-jokes.svg?branch=main)](https://travis-ci.org/freddymu/chuck-norris-jokes)
+
 Create chuck norris jokes in your next PHP project.
 
 ## Installation
