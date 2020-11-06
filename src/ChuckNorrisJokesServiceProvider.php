@@ -4,8 +4,8 @@ namespace Freddymu\ChuckNorrisJokes;
 
 use Freddymu\ChuckNorrisJokes\Console\ChuckNorrisJoke;
 use Freddymu\ChuckNorrisJokes\Http\Controllers\ChuckNorrisController;
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\ServiceProvider;
 
 class ChuckNorrisJokesServiceProvider extends ServiceProvider
 {
